@@ -1,0 +1,42 @@
+.itemContainer {
+  padding: 30px 100px;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer:hover .infobar {
+  width: 100%;
+  max-height: 100px;
+  transition: max-height .2s ease-in;
+  padding: 5px 10px;
+}
+
+.infobar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 10px;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background-color: black;
+}
+
+.text {
+  color: white;
+  margin: 2px 0 0;
+  text-shadow: 0 0 2px #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.loadingContainer {
+  min-height: 500px;
+}
